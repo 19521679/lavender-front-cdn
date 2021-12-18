@@ -1,1 +1,0 @@
-# lavender-front-cdn
