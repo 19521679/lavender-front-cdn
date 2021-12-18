@@ -8,7 +8,6 @@ import React, { useEffect } from "react";
 import { Provider } from "react-redux";
 import configureStore from "./Components/redux/configureStore";
 import LeftMenu from "./Components/Admin/LeftMenu";
-import "./Components/Admin/scss/material-dashboard/style.scss";
 import CookieConsent from "react-cookie-consent";
 import InitData from "./InitData";
 
@@ -35,8 +34,7 @@ function App(props) {
   };
 
   useEffect(() => {
-
-  });
+  },[]);
   return (
     <Provider store={store}>
       <ToastContainer />
@@ -47,7 +45,6 @@ function App(props) {
         ) : (
           <Header />
         )}
-        {/* {props.location.pathname.includes("/lmember")?<LMember></LMember>:null} */}
         {showContentMenus(routes)}
         {props.location.pathname.includes("/admin") ? null : <Footer />}
       </div>

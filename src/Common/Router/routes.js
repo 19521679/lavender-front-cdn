@@ -44,7 +44,7 @@ const routes = [
     main: () => <Article ></Article>,
   },
   {
-    path: "/article/:mabaiviet",
+    path: "/articledetail/:mabaiviet",
     exact: true,
     main: () => <ArticleDetail></ArticleDetail >
   },
@@ -164,14 +164,11 @@ const routes = [
     main: () => <ForgotPassword></ForgotPassword>
   },
   {
-    path: "/",
-    exact: true,
-    main: () => <Home></Home>,
-  },
-  {
     path: "",
     exact: false,
     main: () => <NotFoundPage></NotFoundPage>,
   },
+  
+  
 ];
 export default routes;
